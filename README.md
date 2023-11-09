@@ -1,5 +1,5 @@
 # mastermind-game
-just some of friend homwork that i have help.
+just a game of luck.
 
 in both server and cliend
 "npm i"
