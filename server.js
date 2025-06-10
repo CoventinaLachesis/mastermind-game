@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const server = express();
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({
