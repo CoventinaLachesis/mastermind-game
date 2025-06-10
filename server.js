@@ -78,6 +78,7 @@ io.on('connection', socket => {
     connectedClients.push(socket);
     const clientID = connectedClients.indexOf(socket);
     socket.emit('your-ID', clientID);
+    io.sockets.emit('player-count', connectedClients.length);
     if (clientID === currentTurn) {
         socket.emit('It-your-turn', 'It your turn.');
     }
@@ -90,6 +91,7 @@ io.on('connection', socket => {
                 currentTurn = 0;
             }
         }
+        io.sockets.emit('player-count', connectedClients.length);
         connectedClients.forEach((client, index) => {
             client.emit('your-ID', index);
             if (index === currentTurn) {

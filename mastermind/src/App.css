@@ -36,3 +36,114 @@
     transform: rotate(360deg);
   }
 }
+
+/* Mastermind Game Modern UI */
+.mastermind-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4b0082 0%, #22223b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mastermind-container {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(75,0,130,0.18);
+  padding: 32px 28px 24px 28px;
+  max-width: 480px;
+  width: 100%;
+  margin: 32px auto;
+  position: relative;
+}
+
+.mastermind-title {
+  text-align: center;
+  color: #4b0082;
+  font-size: 2.1rem;
+  margin: 18px 0 8px 0;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.mastermind-rules {
+  background: #f4f4f4;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: pre-wrap;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.mastermind-playerid {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+}
+
+.mastermind-input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.mastermind-input {
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border: 2px solid #4b0082;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  width: 180px;
+  transition: border 0.2s;
+}
+.mastermind-input:disabled {
+  background: #eee;
+  color: #aaa;
+}
+
+.mastermind-send-btn {
+  font-size: 1.1rem;
+  padding: 8px 18px;
+  border: none;
+  background: #4b0082;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.mastermind-send-btn:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+}
+
+.mastermind-messages {
+  min-height: 180px;
+  max-height: 260px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(75,0,130,0.04);
+}
+
+.mastermind-message {
+  margin: 8px 0;
+  padding: 7px 12px;
+  background: #e9e6f7;
+  border-radius: 6px;
+  color: #4b0082;
+  font-size: 1rem;
+  word-break: break-word;
+  box-shadow: 0 1px 4px rgba(75,0,130,0.06);
+}
+
+.mastermind-turn-status {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  font-weight: 600;
+}
