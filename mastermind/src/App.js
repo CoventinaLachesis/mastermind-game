@@ -24,7 +24,7 @@ const App = () => {
   const [isMyTurn, setIsMyTurn] = useState(false);
   const [currentTurn, setCurrentTurn] = useState(null);
   const [socket, setSocket] = useState(null);
-  const endpoint = "http://localhost:9000";
+  const endpoint = "/";
   const messagesEndRef = useRef(null);
 
   useEffect(() => {
