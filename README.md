@@ -31,7 +31,7 @@ https://mastermind-game-f5br.onrender.com
 ### Installation
 1. Clone this repository:
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/CoventinaLachesis/mastermind-game.git
    cd mastermind-game
    ```
 2. Install server dependencies:
